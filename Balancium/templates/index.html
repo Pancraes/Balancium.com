@@ -1,0 +1,68 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="colorlib.com">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet" />
+  <link href="main.css" rel="stylesheet" />
+  <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" />
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+  <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1128099091927277569/1131868333789163581/Image002.png">
+
+
+  <title>Balancium</title>
+</head>
+
+<body>
+
+  <div class="top">
+    <div class = "left">
+      <img class ="logo" src="https://cdn.discordapp.com/attachments/1128099091927277569/1131868333789163581/Image002.png" width="50" height="50" >
+    </div>
+    <div class = "middle">
+      <p class="toptop">Unlocking the Harmony of <strong>Balanced</strong> Chemical Equations</p>
+    </div>
+    <div class = "right">
+      <p class="topright">F Chen, E He</p>
+      <p class="topright">Created for Scioverflow</p>
+    </div>
+  </div>
+
+
+  <div class="s005">
+    <form method="post" action="/">
+      <fieldset>
+        <legend>Balancium.com</legend>
+        
+        <div class="inner-form">
+          <div class="input-field">
+
+            <!-- You just need to get this field. Start -->
+            <script src="https://kit.fontawesome.com/d97b87339f.js" crossorigin="anonymous"></script>
+
+            <div class="search-box">
+              <input class="search-input" type="text" id="search" name="search" placeholder="Your Equation" value="">
+              <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+
+          </div>
+          <div class="suggestion-wrap">
+            <span>Insert chemical equation with elements in parentheses followed by the number of atoms!</span>
+            <span> Example: (H)2 + (O)2 = (H)2(O)1</span>
+          </div>
+        </div>
+        
+      </fieldset>
+    </form>
+  </div>
+  <script>
+    var textPresetVal = new Choices('#choices-text-preset-values',
+      {
+        removeItemButton: true,
+      });
+  </script>
+</body>
+
+</html>
